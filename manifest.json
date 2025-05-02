@@ -1,0 +1,13 @@
+{
+  "name": "YourDailyBuddy UltraPro",
+  "short_name": "DailyBuddy",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Plan better. Stay focused with YourDailyBuddy UltraPro!",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }]
+}

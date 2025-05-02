@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YourDailyBuddy UltraPro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <div class="app">
+    <h1>Welcome to YourDailyBuddy</h1>
+    <input type="text" id="taskInput" placeholder="Add your task" />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <h2>Talk with Exa</h2>
+    <div class="exa-chat">
+      <input type="text" id="exaInput" placeholder="Ask me anything..." />
+      <button onclick="talkToExa()">Send</button>
+      <div id="exaOutput"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
